@@ -1,2 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
 [functions]
-  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Puoi mantenere o rimuovere la sezione [dev] se non ti serve
+[dev]
+  targetPort = 5173
