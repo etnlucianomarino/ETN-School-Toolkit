@@ -27,7 +27,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    const apiKey = process.env.AIRTABLE_API_KEY;
+    const apiKey = process.env.AIRTABLE_PAT;
     const baseId = process.env.AIRTABLE_BASE_ID;
     const tableName = process.env.AIRTABLE_TABLE_NAME || 'Richieste Toolkit';
 
