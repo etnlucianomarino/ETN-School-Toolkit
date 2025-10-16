@@ -47,10 +47,10 @@ function HomePage() {
               />
             </a>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              ETN School – L'intelligenza artificiale che lavora per te
+              ETN School – App intelligenti che lavorano per te
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
-              Strumenti gratuiti per aiutarti ogni giorno in classe
+              AI e strumenti gratuiti per aiutarti ogni giorno in classe
             </p>
             <button
               onClick={scrollToTools}
