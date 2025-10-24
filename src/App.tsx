@@ -96,8 +96,21 @@ function HomePage() {
         </section>
 
         <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-6 max-w-2xl">
-            <ToolkitSignupForm />
+          <div className="container mx-auto px-6 max-w-3xl text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Iscriviti alla Comunità di Pratiche sull'apprendimento dell'AI Generativa per la didattica
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Unisciti a educatori e docenti che stanno esplorando l'intelligenza artificiale nella didattica
+            </p>
+            <a
+              href="https://comunita66.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-[#7FD1C0] text-white rounded-lg text-lg font-semibold hover:bg-[#6BC1AE] transition-colors shadow-lg hover:shadow-xl"
+            >
+              Unisciti alla Comunità
+            </a>
           </div>
         </section>
       </main>
@@ -110,16 +123,21 @@ function HomePage() {
 
 function ToolCard({ icon, title, desc, link }) {
   return (
-    <a 
-      href={link} 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition-shadow block"
+    <div 
+      className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition-shadow flex flex-col justify-between"
     >
-      <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mb-6">{icon}</div>
-      <h3 className="text-2xl font-bold mb-4">{title}</h3>
-      <p className="text-gray-600">{desc}</p>
-    </a>
+      <div>
+        <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mb-6">{icon}</div>
+        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+        <p className="text-gray-600 mb-4">{desc}</p>
+      </div>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 px-4 py-2 bg-[#7FD1C0] text-white rounded-lg font-medium hover:bg-[#6BC1AE] transition-colors inline-block text-center"
+      >Vai all'App</a>
+    </div>
   );
 }
 
