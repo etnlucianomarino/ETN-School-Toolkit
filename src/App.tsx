@@ -70,23 +70,15 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <main className="flex-grow">
-        <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white">
+        <section className="relative bg-gradient-to-b from-blue-50 to-white pt-16 pb-20">
           <div className="container mx-auto px-6 text-center">
             <a href="https://www.etnschool.it" target="_blank" rel="noopener noreferrer">
-              <img src="https://i.postimg.cc/RCGzPwv1/Logo-ETNSchool-01.png" alt="ETN School Logo" className="mx-auto mb-12 h-24 md:h-32 hover:opacity-90 transition-opacity" />
+              <img src="https://i.postimg.cc/RCGzPwv1/Logo-ETNSchool-01.png" alt="ETN School Logo" className="mx-auto mb-8 h-20 md:h-24 hover:opacity-90 transition-opacity" />
             </a>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">ETN School – App intelligenti che lavorano per te</h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">AI e strumenti gratuiti pensati per aiutarti ogni giorno in classe</p>
-            <button onClick={scrollToTools} className="px-8 py-4 text-white bg-[#7FD1C0] hover:bg-[#6BC1AE] rounded-lg text-lg font-semibold transition-colors inline-flex items-center">Scopri gli strumenti</button>
-          </div>
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown size={32} className="text-gray-400" />
-          </div>
-        </section>
+            <p className="text-xl md:text-2xl text-gray-600 mb-16 max-w-3xl mx-auto">AI e strumenti gratuiti pensati per aiutarti ogni giorno in classe</p>
 
-        <section id="tools" className="py-20 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-4 gap-8">
+            <div id="tools" className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
               <ToolCard icon={<Brain className="w-8 h-8 text-green-600" />} title="Easy Mind Maps" desc="Mappe concettuali generate in pochi secondi con AI." link="https://easymindmaps.app" />
               <ToolCard icon={<FileText className="w-8 h-8 text-blue-600" />} title="Easy LaTeX" desc="Crea esercizi da codice e scarica PDF perfetti." link="https://easylatex.app" />
               <ToolCard icon={<Music className="w-8 h-8 text-purple-600" />} title="Easy Music" desc="Scrivi spartiti, MIDI e audio da codice LilyPond." link="https://easy-music.app" />
