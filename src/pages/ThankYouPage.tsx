@@ -1,7 +1,8 @@
 import React from 'react';
 import { Brain, FileText, Music } from 'lucide-react';
+import { Translation } from '../translations';
 
-export default function ThankYouPage(): JSX.Element {
+export default function ThankYouPage({ t }: { t: Translation }): JSX.Element {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-3xl mx-auto text-center">
@@ -12,21 +13,25 @@ export default function ThankYouPage(): JSX.Element {
         />
 
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Benvenuto nel Toolkit AI di ETN School!
+          {t.thankYou.title}
         </h1>
 
         <p className="text-lg text-gray-700 mb-4">
-          Hai appena compiuto un passo importante: non verso la tecnologia, ma verso una
-          <strong> didattica più semplice, più leggera e più condivisa</strong>.
+          {t.thankYou.paragraph1.before}
+          <strong>{t.thankYou.paragraph1.highlight}</strong>
+          {t.thankYou.paragraph1.after}
         </p>
 
         <p className="text-gray-600 mb-10">
-          Dopo aver formato oltre <strong>600 docenti</strong>, abbiamo ascoltato i vostri bisogni e creato strumenti pratici, gratuiti e immediati. Questo è il punto di partenza per costruire insieme
-          una <strong>comunità di pratiche</strong> dove la tecnologia lavora davvero per voi.
+          {t.thankYou.paragraph2.before}
+          <strong>{t.thankYou.paragraph2.highlight1}</strong>
+          {t.thankYou.paragraph2.middle}
+          <strong>{t.thankYou.paragraph2.highlight2}</strong>
+          {t.thankYou.paragraph2.after}
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-          Inizia da qui 👇
+          {t.thankYou.startHere}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6 text-left mb-12">
@@ -36,7 +41,7 @@ export default function ThankYouPage(): JSX.Element {
               <h3 className="text-lg font-bold text-gray-900">Easy Mind Maps</h3>
             </div>
             <p className="text-sm text-gray-600">
-              Genera mappe concettuali in pochi secondi. Perfette per lezioni, schemi e ripassi.
+              {t.thankYou.tools.mindMaps}
             </p>
           </a>
 
@@ -46,7 +51,7 @@ export default function ThankYouPage(): JSX.Element {
               <h3 className="text-lg font-bold text-gray-900">Easy LaTeX</h3>
             </div>
             <p className="text-sm text-gray-600">
-              Crea esercizi da codice o AI e scaricali in PDF. Matematica, fisica e oltre.
+              {t.thankYou.tools.latex}
             </p>
           </a>
 
@@ -56,13 +61,13 @@ export default function ThankYouPage(): JSX.Element {
               <h3 className="text-lg font-bold text-gray-900">Easy Music</h3>
             </div>
             <p className="text-sm text-gray-600">
-              Scrivi una melodia in testo e genera spartiti, MIDI e anteprima audio.
+              {t.thankYou.tools.music}
             </p>
           </a>
         </div>
 
         <p className="text-gray-700 text-sm">
-          📨 Riceverai nei prossimi giorni 3 email, una per ciascuno strumento, con esempi pratici, video tutorial e idee pronte all’uso.
+          📨 {t.thankYou.emailNote}
         </p>
       </div>
     </div>

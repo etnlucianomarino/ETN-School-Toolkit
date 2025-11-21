@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { Translation } from '../translations';
 
-export function CookieConsent() {
+export function CookieConsent({ t }: { t: Translation }) {
   const [showConsent, setShowConsent] = useState(false);
 
   useEffect(() => {
@@ -23,16 +24,16 @@ export function CookieConsent() {
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div className="flex-1">
           <p className="text-gray-600 text-sm md:text-base">
-            Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti la nostra{' '}
+            {t.cookie.message}{' '}
             <a
               href="/privacy-policy"
               className="text-[#7FD1C0] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Privacy Policy
-            </a>{' '}
-            e l'uso dei cookie.
+              {t.cookie.policyLink}
+            </a>
+            {t.cookie.afterLink}
           </p>
         </div>
         <div className="flex items-center gap-4">
@@ -40,12 +41,12 @@ export function CookieConsent() {
             onClick={acceptCookies}
             className="px-6 py-2 bg-[#7FD1C0] hover:bg-[#6BC1AE] text-white rounded-lg font-medium transition-colors"
           >
-            Accetta
+            {t.cookie.accept}
           </button>
           <button
             onClick={() => setShowConsent(false)}
             className="p-2 text-gray-500 hover:text-gray-700 transition-colors"
-            aria-label="Chiudi"
+            aria-label={t.cookie.close}
           >
             <X size={20} />
           </button>
