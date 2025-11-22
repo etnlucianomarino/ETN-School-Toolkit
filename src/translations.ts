@@ -36,6 +36,8 @@ export type Translation = {
   communityTitle: string;
   communityDescription: string;
   communityCta: string;
+  communityLink: string;
+  communityLabel: string;
   formTitle: string;
   namePlaceholder: string;
   emailPlaceholder: string;
@@ -85,6 +87,8 @@ export const translations: Record<Language, Translation> = {
     communityTitle: "Iscriviti alla Comunità di Pratiche sull'apprendimento dell'AI Generativa per la didattica",
     communityDescription: "Unisciti a educatori e docenti che stanno esplorando l'intelligenza artificiale nella didattica",
     communityCta: 'Unisciti alla Comunità',
+    communityLink: 'https://comunita66.netlify.app',
+    communityLabel: 'Community dei docenti',
     formTitle: 'Iscriviti al Toolkit AI',
     namePlaceholder: 'Nome',
     emailPlaceholder: 'Email',
@@ -142,6 +146,8 @@ export const translations: Record<Language, Translation> = {
     communityTitle: 'Join the Community of Practice on Generative AI for teaching',
     communityDescription: 'Join educators exploring artificial intelligence in education',
     communityCta: 'Join the community',
+    communityLink: 'https://comunita66.netlify.app',
+    communityLabel: 'Join the community',
     formTitle: 'Sign up for the AI Toolkit',
     namePlaceholder: 'Name',
     emailPlaceholder: 'Email',
@@ -199,6 +205,8 @@ export const translations: Record<Language, Translation> = {
     communityTitle: 'Únete a la Comunidad de Prácticas sobre la IA generativa para la enseñanza',
     communityDescription: 'Únete a docentes que están explorando la inteligencia artificial en la educación',
     communityCta: 'Únete a la comunidad',
+    communityLink: 'https://comunita66.netlify.app',
+    communityLabel: 'Únete a la comunidad',
     formTitle: 'Apúntate al Toolkit de IA',
     namePlaceholder: 'Nombre',
     emailPlaceholder: 'Correo electrónico',
@@ -256,6 +264,8 @@ export const translations: Record<Language, Translation> = {
     communityTitle: 'Dołącz do społeczności praktyków zajmującej się generatywną AI w edukacji',
     communityDescription: 'Dołącz do nauczycieli, którzy badają sztuczną inteligencję w dydaktyce',
     communityCta: 'Dołącz do społeczności',
+    communityLink: 'https://aicommunitypl.netlify.app',
+    communityLabel: 'Społeczność nauczycieli',
     formTitle: 'Zapisz się do Toolkit AI',
     namePlaceholder: 'Imię',
     emailPlaceholder: 'Email',
@@ -313,6 +323,8 @@ export const translations: Record<Language, Translation> = {
     communityTitle: 'Присъединете се към общността за генеративен AI в образованието',
     communityDescription: 'Присъединете се към преподаватели, които изследват изкуствения интелект в обучението',
     communityCta: 'Включете се в общността',
+    communityLink: 'https://comunita66.netlify.app',
+    communityLabel: 'Включете се в общността',
     formTitle: 'Запишете се за AI Toolkit',
     namePlaceholder: 'Име',
     emailPlaceholder: 'Имейл',
@@ -370,6 +382,8 @@ export const translations: Record<Language, Translation> = {
     communityTitle: "Rejoignez la communauté de pratique sur l'IA générative pour l'enseignement",
     communityDescription: "Rejoignez des enseignants qui explorent l'intelligence artificielle en éducation",
     communityCta: 'Rejoindre la communauté',
+    communityLink: 'https://comunita66.netlify.app',
+    communityLabel: 'Rejoindre la communauté',
     formTitle: 'Inscrivez-vous au Toolkit IA',
     namePlaceholder: 'Nom',
     emailPlaceholder: 'Email',

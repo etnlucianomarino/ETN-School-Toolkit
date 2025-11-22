@@ -137,12 +137,12 @@ function HomePage({
               {t.communityDescription}
             </p>
             <a
-              href="https://comunita66.netlify.app"
+              href={t.communityLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-[#7FD1C0] text-white rounded-lg text-lg font-semibold hover:bg-[#6BC1AE] transition-colors shadow-lg hover:shadow-xl"
             >
-              {t.communityCta}
+              {t.communityLabel}
             </a>
           </div>
         </section>
